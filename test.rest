@@ -1,0 +1,31 @@
+###GET EMPLOYEES
+GET http://localhost:3300/employee
+
+###GET EMPLOYEE
+GET http://localhost:3300/employee/john
+
+###ADD EMPLOYEE
+POST http://localhost:3300/addemp
+Content-Type: application/json
+
+{
+    "name":"roopa",
+    "salary":"300"
+}
+
+###UPDATE SALARY OF AN EMPLOYEE
+PATCH http://localhost:3300/changesalary
+Content-Type: application/json
+
+{
+    "name":"john",
+    "newsalary":"100"
+}
+
+###DELETE AN EMPLOYEE
+DELETE http://localhost:3300/employee
+Content-Type: application/json
+
+{
+    "name":"lilly"
+}
